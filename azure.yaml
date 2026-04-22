@@ -1,0 +1,19 @@
+name: ev-charging-system
+metadata:
+  description: Smart EV Charging Optimization System
+  version: 1.0.0
+
+services:
+  backend:
+    project: ./backend
+    language: node
+    host: appservice
+
+  frontend:
+    project: ./frontend
+    language: node
+    host: appservice
+
+infra:
+  path: ./infra
+  module: main
